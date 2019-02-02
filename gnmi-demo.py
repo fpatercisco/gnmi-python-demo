@@ -103,9 +103,9 @@ if args.paths:
         for elem in path.strip("/").split("/"):
             # TODO: add support for key-value pairs
             pathElems.append(gnmi_pb2.PathElem(name=elem))
-            d_print("pathElems=", pathElems)
-            paths.append(gnmi_pb2.Path(elem=pathElems))
-            d_print("constructed paths=", paths)
+        d_print("pathElems=", pathElems)
+        paths.append(gnmi_pb2.Path(elem=pathElems))
+    d_print("constructed paths=", paths)
 
     getRequest = gnmi_pb2.GetRequest(prefix=prefix, path=paths, type='ALL',
                                  encoding='JSON_IETF')
