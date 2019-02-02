@@ -9,7 +9,7 @@ A demo gNMI client in python. Currently Capabilities() and Get() are supported (
 ## Usage
 `$ python3 ./gnmi-demo.py --help` for usage instructions. 
 
-Generally you'll need to provide a client certificate (so you'll probably also need to override the cert hostname) and also need to provide a username and password for call-level authentication ([required by gNMI](https://github.com/openconfig/reference/blob/master/rpc/gnmi/gnmi-authentication.md)).
+Generally you'll need to provide a client certificate (so you'll probably also need to override the cert hostname) and also need to provide a username and password for call-level authentication (as [required by gNMI](https://github.com/openconfig/reference/blob/master/rpc/gnmi/gnmi-authentication.md#encryption)).
 
 Presently you can request the target's capabilites or provide a path and origin to retrieve configuration.
 
